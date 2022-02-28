@@ -1,0 +1,58 @@
+/* Global Styles */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+  padding: 5% 10%;
+  background-color: #EFEFEF;
+  min-height: 100vh;
+}
+/* App Title */
+.title {
+  text-align: left;
+  font-size: xx-large;
+}
+.subtitle {
+  font-size: x-large;
+  margin: 0;
+  padding-bottom: 20px;
+}
+/* Layout Spacers */
+.vertical-spacer {
+  height: 20px;
+}
+.horizontal-spacer {
+  width: 20px;
+}
+/* Select bar container */
+.select-container {
+  background-color: white;
+  padding: 3% 20%;
+  border-radius: 10px;
+}
+/* Lists */
+.lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+.list-container {
+  width: 100%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .App {padding: 2%}
+  .title {text-align: center;}
+  .vertical-spacer {height: 10px;}
+  .horizontal-spacer { display: none;}
+  .lists { flex-wrap: wrap; }
+  .list-container { width: 100%; }
+}
